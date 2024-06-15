@@ -80,6 +80,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public EmployeeBonusList getEmployeesList(String date){
+        System.out.println(date);
 
         EmployeeBonusList employeeBonusList = new EmployeeBonusList();
         try {
@@ -105,7 +106,7 @@ public class EmployeeServiceImpl implements EmployeeService{
                     currencyList.put(e.getCurrency(), place[0]);
                     place[0] = place[0] + 1;
 
-                    
+
 
                     CurrencyResponseDto currencyResponseDto = new CurrencyResponseDto();
 

@@ -12,7 +12,7 @@ import java.util.List;
 public class RequestDto {
 
 
-    private List<EmployeeDto> employees;
+    private List<EmployeeDto> employees=new ArrayList<>();
 
     public List<EmployeeDto> getEmployees() {
         return employees;
